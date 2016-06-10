@@ -1,16 +1,17 @@
-<h1>Welcome to Die</h1>
-
+<div class="jumbotron"></div>
+<br>
 <div class="container">
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
      <p>{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</p>
      <p>{{question.author}}</p>
-     <br>
      {{update-question question=question update="update"}}
+     <br>
   {{/each}}
+  <h4>Ask a Question</h4>
+  {{new-question save="save"}}
 </div>
 
-<h4>Ask a Question</h4>
-{{new-question save="save"}}
+
 
 
 {{outlet}}
