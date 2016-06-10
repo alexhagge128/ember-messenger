@@ -1,0 +1,12 @@
+<h1>Welcome to Die</h1>
+
+<div class="container">
+  {{#each model as |question|}}
+     <p>{{question.query}}</p>
+     <p>{{question.author}}</p>
+     <br>
+  {{/each}}
+</div>
+
+
+{{outlet}}
