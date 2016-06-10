@@ -1,0 +1,15 @@
+{{#if updateQuestionForm}}
+  <form>
+    <div class="form-group">
+      {{input value=query id="updatequery" placeholder="Update Question"}}
+    </div>
+
+    <div class="form-group">
+      {{input value=note id="updatenote" placeholder="Update Info"}}
+    </div>
+
+    <button {{action 'update' question}}>Update</button>
+  </form>
+{{else}}
+  <button {{action 'updateQuestionForm'}}>Update</button>
+{{/if}}
