@@ -5,11 +5,18 @@
   }, {
     "author": "John",
     "query": "How many gallons of blood in the human body?",
-    "note": "Just curious..."
+    "note": "Just curious...",
+    "answers": {
+      "0": true,
+      "1": true,
+      "2": true
+    }
     }],
 
     "answers": [{
       "author": "SomeGuy",
-      "message": "Mustard contains acetic acid which helps produce acetylcholine, a neurotransmitter that helps muscles work"
+      "message": "Mustard contains acetic acid which helps produce acetylcholine, a neurotransmitter that helps muscles work",
+      "question": "0"
+      
       }]
   }

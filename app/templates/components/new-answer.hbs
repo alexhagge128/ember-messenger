@@ -1,0 +1,11 @@
+<form>
+  <div class="form-group">
+    {{input value=author id="author" placeholder="Name"}}
+  </div>
+
+  <div class="form-group">
+    {{input value=message id="messsage" placeholder="Answer"}}
+  </div>
+
+  <button {{action 'saveAnswer'}}>Post</button>
+</form>
