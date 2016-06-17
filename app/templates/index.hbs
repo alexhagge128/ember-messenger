@@ -1,17 +1,18 @@
 <div class="jumbotron"></div>
 <br>
 <div class="container">
+  <h4>Ask a Question</h4>
+  {{new-question save="save"}}
+  <br>
+  <hr>
   {{#each model.questions as |question|}}
      <p>{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</p>
      <p>{{question.author}}</p>
-     {{question-popularity question}}
-     <br>
+     <p>{{question-popularity question}}</p>
      {{update-question question=question update="update"}}
      <br>
      <hr>
   {{/each}}
-  <h4>Ask a Question</h4>
-  {{new-question save="save"}}
 </div>
 
 

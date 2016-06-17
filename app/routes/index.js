@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'ember';
 
 export default Ember.Route.extend({
   model() {
@@ -27,4 +28,7 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     }
   }
+
+  // sortBy: ['date:desc'],
+  // sortedQuestions: Ember.computed.sort('model.questions', 'sortBy'),
 });

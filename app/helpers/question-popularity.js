@@ -7,7 +7,6 @@ export function questionPopularity(params) {
     console.log("this topic is on fire");
     //actions
   }
-
   return ("Responses: " + question.get('answers').get('length'));
 }
 
