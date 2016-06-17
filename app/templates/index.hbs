@@ -1,27 +1,24 @@
 <div class="jumbotron"></div>
-<br>
-<nav class='navbar navbar-default navbar-fixed-bottom'>
-  <h4>Ask a Question</h4>
-  {{new-question save="save"}}
-  <br>
-  <hr>
-</nav>
+
+<div class="container">
+  <nav id="navDetails" class='navbar navbar-default navbar-fixed-bottom'>
+    <h4>Ask a Question</h4>
+    {{new-question save="save"}}
+    <hr>
+  </nav>
+</div>
+
 <div class="container">
   {{#each model.questions as |question|}}
-     <p>{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</p>
+     <h4>{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</h4>
      <p>{{question.author}}</p>
      <p>{{question-popularity question}}</p>
      {{update-question question=question update="update"}}
-     <button {{action 'addToFavs' question}}>Add to Favorites</button>
+     <button class="btn btn-success"{{action 'addToFavs' question}}>Add to Favorites</button>
      <br>
      <hr>
   {{/each}}
-
   {{favorite-display}}
-
 </div>
-
-
-
 
 {{outlet}}

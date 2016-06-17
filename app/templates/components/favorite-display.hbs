@@ -1,4 +1,8 @@
-<h4>Favorites</h4>
-{{#each favoriteQuestions.items as |item|}}
-  <p>{{#link-to 'question' item.id}}{{item.query}}{{/link-to}}</p>
-{{/each}}
+<h3>Favorites</h3>
+<div class="favclass">
+  {{#each favoriteQuestions.items as |item|}}
+    <h4>{{#link-to 'question' item.id}}{{item.query}}{{/link-to}}</h4>
+    <button class="btn btn-danger" {{action 'removeFromFavs' item}}>Remove</button>
+    <hr>
+  {{/each}}
+</div>

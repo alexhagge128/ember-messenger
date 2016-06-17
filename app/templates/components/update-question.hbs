@@ -8,8 +8,8 @@
       {{input value=note id="updatenote" placeholder="Update Info"}}
     </div>
 
-    <button {{action 'update' question}}>Update</button>
+    <button class="btn btn-warning"{{action 'update' question}}>Submit</button>
   </form>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Update</button>
+  <button class="btn btn-info"{{action 'updateQuestionForm'}}>Update</button>
 {{/if}}
