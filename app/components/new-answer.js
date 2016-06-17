@@ -13,8 +13,6 @@ export default Ember.Component.extend({
         date: moment().format('YYYY-MM-DD h:mm:ss a')
       };
       this.sendAction('saveAnswer', params);
-      console.log(params.date);
-
       this.set('author', "");
       this.set('message', "");
     }

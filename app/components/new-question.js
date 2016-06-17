@@ -9,6 +9,9 @@ export default Ember.Component.extend({
         note: this.get('note')
       };
       this.sendAction('save', params);
+      this.set('author', "");
+      this.set('query', "");
+      this.set('note', "");
     }
   }
 });

@@ -2,13 +2,13 @@
 <br>
 <div class="container">
   {{#each model.questions as |question|}}
-
-    {{question-popularity question}}
-
      <p>{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</p>
      <p>{{question.author}}</p>
+     {{question-popularity question}}
+     <br>
      {{update-question question=question update="update"}}
      <br>
+     <hr>
   {{/each}}
   <h4>Ask a Question</h4>
   {{new-question save="save"}}
