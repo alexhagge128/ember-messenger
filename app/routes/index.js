@@ -2,6 +2,8 @@ import Ember from 'ember';
 import moment from 'ember';
 
 export default Ember.Route.extend({
+  favoriteQuestions: Ember.inject.service(),
+
   model() {
     return Ember.RSVP.hash({
       questions: this.store.findAll('question'),
@@ -26,7 +28,13 @@ export default Ember.Route.extend({
       });
       question.save();
       this.transitionTo('index');
+    },
+
+    addToFavs(item) {
+      this.get('favoriteQuestions').add(item);
+      console.log(item);
     }
+
   }
 
   // sortBy: ['date:desc'],
