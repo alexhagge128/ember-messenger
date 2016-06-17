@@ -1,6 +1,8 @@
 # Messenger
 
-This is a bare-bones instant messenger application built for week3 of Ember in our JavaScript Course at Epicodus. Styling and further functionality will be implemented later!
+This is a bare-bones instant messenger application built for week3 of Ember in our JavaScript Course at Epicodus. Minimal styling, computed properties, a custom helper and service has been added.
+
+Issues: Moment/computed sort could not be implemented on the question model. There is a slight issue with the fixed footers. Other than that everthing functions fine.
 
 ## Prerequisites
 
