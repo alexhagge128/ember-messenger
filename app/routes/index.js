@@ -32,11 +32,7 @@ export default Ember.Route.extend({
 
     addToFavs(item) {
       this.get('favoriteQuestions').add(item);
-      console.log(item);
     }
 
   }
-
-  // sortBy: ['date:desc'],
-  // sortedQuestions: Ember.computed.sort('model.questions', 'sortBy'),
 });

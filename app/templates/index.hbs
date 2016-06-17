@@ -1,6 +1,7 @@
-<div class="jumbotron"></div>
-
 <div class="container">
+<div class="jumbotron"><h1>Ember Q & A</h1></div>
+
+
   <nav id="navDetails" class='navbar navbar-default navbar-fixed-bottom'>
     <h4>Ask a Question</h4>
     {{new-question save="save"}}
@@ -14,7 +15,7 @@
      <p>{{question.author}}</p>
      <p>{{question-popularity question}}</p>
      {{update-question question=question update="update"}}
-     <button class="btn btn-success"{{action 'addToFavs' question}}>Add to Favorites</button>
+     <button class="btn btn-warning"{{action 'addToFavs' question}}>Add to Favorites</button>
      <br>
      <hr>
   {{/each}}

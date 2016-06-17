@@ -1,9 +1,20 @@
 <h2>Answers:</h2>
+
 <div class="container">
-  <h2>{{model.query}}</h2>
-  <h4>{{model.note}}</h4>
+  <nav id="navDetails" class='navbar navbar-default navbar-fixed-bottom'>
+    <h4>Ask a Question</h4>
+    {{new-answer question=model saveAnswer="saveAnswer"}}
+    <hr>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="questionPage">
+    <h2>{{model.query}}</h2>
+    <h4>{{model.note}}</h4>
+  </div>
   <br>
   {{a-display model=model}}
   <br>
-  {{new-answer question=model saveAnswer="saveAnswer"}}
+
 </div>

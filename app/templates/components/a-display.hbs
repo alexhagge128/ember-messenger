@@ -1,7 +1,8 @@
 {{#each sortedAnswers as |answer|}}
   <div id="commentBlock">
-    <p>{{answer.author}}</p>
+    <p><strong>{{answer.author}}</strong> @ {{answer.date}}</p>
     <h3>{{answer.message}}</h3>
+    <hr>
     <br>
   </div>
 {{/each}}

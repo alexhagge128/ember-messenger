@@ -1,3 +1,26 @@
 #navDetails {
-  padding: 15px;
+  padding: 5px;
+  padding-left: 20px;
+}
+.jumbotron {
+  text-align: center;
+  background-color: orange;
+  color: white;
+}
+
+#topNav {
+  background-color: orange;
+  border-color: orange;
+}
+
+.form-group {
+  float: left;
+}
+
+ {
+  color: lightgreen;
+}
+
+#greenStuff {
+  color: green;
 }
